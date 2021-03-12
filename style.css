@@ -5,3 +5,9 @@
 body {
 	background-color: var(--background);
 }
+
+@media (min-width: 768px) {
+	.card {
+		width: 49%;
+	}
+}

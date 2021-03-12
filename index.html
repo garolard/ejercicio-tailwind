@@ -15,64 +15,226 @@
 </head>
 
 <body>
-  <nav class="z-10 absolute top-0 w-full ">
-    <div class="mx-auto max-w-screen-lg flex justify-between content-center px-5 py-5 text-white">
-      <p class="uppercase font-bold">tailwind starter kit</p>
-      <button><i class="fas fa-bars"></i></button>
-    </div>
-  </nav>
-  <main>
-    <div class="relative">
-      <div class="absolute bg-cover bg-center w-full h-full" style="clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%); background-image: url('https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress'); filter: brightness(30%)"></div>
-      <div class="relative flex flex-col items-center justify-center w-full text-white pt-32 pb-36 px-5 mx-auto max-w-screen-lg" id="title">
-        <h1 class="font-bold text-5xl leading-snug text-center">Your story starts with us.</h1>
-        <p class="mt-6 font-light leading-7 text-center">This is a simple example of a landing Landing Page you can build using Tailwind Starter Kit. It features multiple CSS components based on the Tailwindcss design system.</p>
-      </div>
-    </div>
-    <section class="-mt-12 mx-auto max-w-screen-lg">
-      <div class="md:flex mx-6">
-        <div id="primera-tarjetita" class="relative rounded-xl bg-gray-50  flex flex-col items-center text-center shadow-lg p-4 flex-1 mx-0 md:mr-8">
-          <div class="rounded-full bg-red-400 shadow-lg h-12 w-12 flex items-center text-white justify-center mb-4"><i class="fas fa-award"></i></div>
-          <h6 class="font-semibold text-xl text-gray-800">Awarded Agency</h6>
-          <p class="mt-2 mb-4 text-gray-600">Divide details about your product or agency work into parts. A paragraph describing a feature will be enough.</p>
-        </div>
-
-        <div id="segunda-tarjetita" class="relative mt-8 md:mt-0 rounded-xl bg-gray-50  flex flex-col items-center text-center shadow-lg p-4 flex-1 mx-0 md:mr-8">
-          <div class="rounded-full bg-blue-400 shadow-lg h-12 w-12 flex items-center text-white justify-center mb-4"><i class="fas fa-retweet"></i></div>
-          <h6 class="font-semibold text-xl text-gray-800">Free Revisions</h6>
-          <p class="mt-2 mb-4 text-gray-600">Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious.</p>
-        </div>
-
-        <div id="tercera-tarjetita" class="relative mt-8 md:mt-0 rounded-xl bg-gray-50  flex flex-col items-center text-center shadow-lg p-4 flex-1 mx-0">
-          <div class="rounded-full bg-green-400 shadow-lg h-12 w-12 flex items-center text-white justify-center mb-4"><i class="fas fa-fingerprint"></i></div>
-          <h6 class="font-semibold text-xl text-gray-800">Free Revisions</h6>
-          <p class="mt-2 mb-4 text-gray-600">Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious.</p>
-        </div>
-      </div>
-
-      <div class="md:flex justify-center items-center mx-8 md:mx-24 mt-36">
-        <div id="texto" class="flex flex-col flex-1 md:mr-32">
-          <div class="rounded-full bg-gray-100 shadow-lg h-14 w-14 flex items-center text-gray-600 justify-center mb-4"><i class="fas fa-user-friends"></i></div>
-          <h6 class="font-semibold text-3xl text-gray-800 mb-4 leading-normal">Working with us is a pleasure</h6>
-          <p class="font-light leading-relaxed mt-2 mb-4 text-gray-600">Don't let your uses guess by attaching tooltips and popoves to any element. Just make sure you enable them first via JavaScript.</p>
-          <p class="font-light leading-relaxed mt-2 mb-4 text-gray-600">The kit comes with three pre-built pages to help you get started faster. You can change the text and images and you're good to go. Just make sure you enable them first via JavaScript.</p>
-        </div>
-
-        <div id="imagen" class="bg-pink-500 text-white md:w-80 rounded-lg max-w-full">
-          <img alt="..." style="clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80" class="w-full align-middle rounded-t-lg">
-          <div class="px-8 py-8">
-            <h6 class="font-semibold text-xl mb-4">Top Notch Services</h6>
-            <p class="font-light leading-relaxed">The Arctic Ocean freezes every winter and much of the sea-ice then thaws every summer, and that process will continue whatever happens.</p>
+  <div class="flex w-full justify-center items-start">
+    <div id="contenedor" class="flex flex-wrap justify-between p-3 lg:max-w-3xl h-auto">
+      <div class="card bg-gray-50 rounded-xl w-full shadow-lg">
+        <img class="mb-2 w-full align-middle rounded-t-lg" src="https://smartmenudev.agorapos.com/api/digital-menu/demo/image/product/32"/>
+        <div class="p-2">
+          <div class="flex items-center">
+            <h1 class="flex-grow text-base font-semibold uppercase">Quesadilla de pollo y queso</h1>
+            <div class="flex-shrink-0 mx-2">
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-leaf"></i>
+            </div>
+            <p class="flex-shrink-0">9.00 €</p>
+          </div>
+          <p class="text-gray-600 text-sm">Dos tortillas de trigo rellenas de pollo a la plancha y queso fundido.</p>
+          <div class="flex justify-between items-center mt-2 mb-1">
+            <div class="alergens space-x-2">
+              <i class="fas fa-egg"></i>
+              <i class="fas fa-cheese"></i>
+              <i class="fas fa-bacon"></i>
+            </div>
+            <!-- boton de + -->
+            <div class="rounded-full bg-blue-400 w-6 h-6 flex items-center justify-center">
+              <i class="fas fa-plus text-white"></i>
+            </div>
           </div>
         </div>
-
       </div>
-    </section>
-  </main>
-  <footer class='mx-auto max-w-screen-lg'>
-
-  </footer>
-  <script src="js/scripts.js"></script>
-
+      <div class="card bg-gray-50 rounded-xl w-full shadow-lg mt-4 md:mt-0">
+        <img class="mb-2 w-full align-middle rounded-t-lg" src="https://smartmenudev.agorapos.com/api/digital-menu/demo/image/product/32"/>
+        <div class="p-2">
+          <div class="flex items-center">
+            <h1 class="flex-grow text-base font-semibold uppercase">Quesadilla de pollo y queso</h1>
+            <div class="flex-shrink-0 mx-2">
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-leaf"></i>
+            </div>
+            <p class="flex-shrink-0">9.00 €</p>
+          </div>
+          <p class="text-gray-600 text-sm">Dos tortillas de trigo rellenas de pollo a la plancha y queso fundido.</p>
+          <div class="flex justify-between items-center mt-2 mb-1">
+            <div class="alergens space-x-2">
+              <i class="fas fa-egg"></i>
+              <i class="fas fa-cheese"></i>
+              <i class="fas fa-bacon"></i>
+            </div>
+            <!-- boton de + -->
+            <div class="rounded-full bg-blue-400 w-6 h-6 flex items-center justify-center">
+              <i class="fas fa-plus text-white"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-gray-50 rounded-xl w-full shadow-lg mt-4">
+        <img class="mb-2 w-full align-middle rounded-t-lg" src="https://smartmenudev.agorapos.com/api/digital-menu/demo/image/product/32"/>
+        <div class="p-2">
+          <div class="flex items-center">
+            <h1 class="flex-grow text-base font-semibold uppercase">Quesadilla de pollo y queso</h1>
+            <div class="flex-shrink-0 mx-2">
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-leaf"></i>
+            </div>
+            <p class="flex-shrink-0">9.00 €</p>
+          </div>
+          <p class="text-gray-600 text-sm">Dos tortillas de trigo rellenas de pollo a la plancha y queso fundido.</p>
+          <div class="flex justify-between items-center mt-2 mb-1">
+            <div class="alergens space-x-2">
+              <i class="fas fa-egg"></i>
+              <i class="fas fa-cheese"></i>
+              <i class="fas fa-bacon"></i>
+            </div>
+            <!-- boton de + -->
+            <div class="rounded-full bg-blue-400 w-6 h-6 flex items-center justify-center">
+              <i class="fas fa-plus text-white"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-gray-50 rounded-xl w-full shadow-lg mt-4">
+        <img class="mb-2 w-full align-middle rounded-t-lg" src="https://smartmenudev.agorapos.com/api/digital-menu/demo/image/product/32"/>
+        <div class="p-2">
+          <div class="flex items-center">
+            <h1 class="flex-grow text-base font-semibold uppercase">Quesadilla de pollo y queso</h1>
+            <div class="flex-shrink-0 mx-2">
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-leaf"></i>
+            </div>
+            <p class="flex-shrink-0">9.00 €</p>
+          </div>
+          <p class="text-gray-600 text-sm">Dos tortillas de trigo rellenas de pollo a la plancha y queso fundido.</p>
+          <div class="flex justify-between items-center mt-2 mb-1">
+            <div class="alergens space-x-2">
+              <i class="fas fa-egg"></i>
+              <i class="fas fa-cheese"></i>
+              <i class="fas fa-bacon"></i>
+            </div>
+            <!-- boton de + -->
+            <div class="rounded-full bg-blue-400 w-6 h-6 flex items-center justify-center">
+              <i class="fas fa-plus text-white"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-gray-50 rounded-xl w-full shadow-lg mt-4">
+        <img class="mb-2 w-full align-middle rounded-t-lg" src="https://smartmenudev.agorapos.com/api/digital-menu/demo/image/product/32"/>
+        <div class="p-2">
+          <div class="flex items-center">
+            <h1 class="flex-grow text-base font-semibold uppercase">Quesadilla de pollo y queso</h1>
+            <div class="flex-shrink-0 mx-2">
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-leaf"></i>
+            </div>
+            <p class="flex-shrink-0">9.00 €</p>
+          </div>
+          <p class="text-gray-600 text-sm">Dos tortillas de trigo rellenas de pollo a la plancha y queso fundido.</p>
+          <div class="flex justify-between items-center mt-2 mb-1">
+            <div class="alergens space-x-2">
+              <i class="fas fa-egg"></i>
+              <i class="fas fa-cheese"></i>
+              <i class="fas fa-bacon"></i>
+            </div>
+            <!-- boton de + -->
+            <div class="rounded-full bg-blue-400 w-6 h-6 flex items-center justify-center">
+              <i class="fas fa-plus text-white"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-gray-50 rounded-xl w-full shadow-lg mt-4">
+        <img class="mb-2 w-full align-middle rounded-t-lg" src="https://smartmenudev.agorapos.com/api/digital-menu/demo/image/product/32"/>
+        <div class="p-2">
+          <div class="flex items-center">
+            <h1 class="flex-grow text-base font-semibold uppercase">Quesadilla de pollo y queso</h1>
+            <div class="flex-shrink-0 mx-2">
+              <i class="fas fa-heart"></i>
+              <i class="fas fa-leaf"></i>
+            </div>
+            <p class="flex-shrink-0">9.00 €</p>
+          </div>
+          <p class="text-gray-600 text-sm">Dos tortillas de trigo rellenas de pollo a la plancha y queso fundido.</p>
+          <div class="flex justify-between items-center mt-2 mb-1">
+            <div class="alergens space-x-2">
+              <i class="fas fa-egg"></i>
+              <i class="fas fa-cheese"></i>
+              <i class="fas fa-bacon"></i>
+            </div>
+            <!-- boton de + -->
+            <div class="rounded-full bg-blue-400 w-6 h-6 flex items-center justify-center">
+              <i class="fas fa-plus text-white"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div id="carrito" class="lg:block hidden m-3 w-full max-w-sm sticky top-2">
+      <div class="flex flex-col items-center bg-gray-50 rounded-xl p-2">
+        <h1 class="text-xl font-semibold mb-2">Tu pedido</h1>
+        <i class="fas fa-motorcycle text-3xl"></i>
+        <p class="mb-4">2.00 €</p>
+        <div class="h-72 w-full overflow-y-scroll">
+          <div class="flex flex-col">
+            <div class="flex justify-between">
+              <div>1x Aros de cebolla</div>
+              <div>4.00</div>
+            </div>
+            <div class="flex justify-between my-2">
+              <div class="rounded-full bg-blue-400 w-6 h-6 flex items-center justify-center"><i class="fas fa-minus text-white"></i></div>
+              <div class="rounded-full bg-blue-400 w-6 h-6 flex items-center justify-center"><i class="fas fa-plus text-white"></i></div>
+            </div>
+          </div>
+          <hr class="border-gray-200">
+          <div class="flex flex-col">
+            <div class="flex justify-between">
+              <div>1x Aros de cebolla</div>
+              <div>4.00</div>
+            </div>
+            <div class="flex justify-between my-2">
+              <div class="rounded-full bg-blue-400 w-6 h-6 flex items-center justify-center"><i class="fas fa-minus text-white"></i></div>
+              <div class="rounded-full bg-blue-400 w-6 h-6 flex items-center justify-center"><i class="fas fa-plus text-white"></i></div>
+            </div>
+          </div>
+          <hr class="border-gray-200">
+          <div class="flex flex-col">
+            <div class="flex justify-between">
+              <div>1x Aros de cebolla</div>
+              <div>4.00</div>
+            </div>
+            <div class="flex justify-between my-2">
+              <div class="rounded-full bg-blue-400 w-6 h-6 flex items-center justify-center"><i class="fas fa-minus text-white"></i></div>
+              <div class="rounded-full bg-blue-400 w-6 h-6 flex items-center justify-center"><i class="fas fa-plus text-white"></i></div>
+            </div>
+          </div>
+          <hr class="border-gray-200">
+          <div class="flex flex-col">
+            <div class="flex justify-between">
+              <div>1x Aros de cebolla</div>
+              <div>4.00</div>
+            </div>
+            <div class="flex justify-between my-2">
+              <div class="rounded-full bg-blue-400 w-6 h-6 flex items-center justify-center"><i class="fas fa-minus text-white"></i></div>
+              <div class="rounded-full bg-blue-400 w-6 h-6 flex items-center justify-center"><i class="fas fa-plus text-white"></i></div>
+            </div>
+          </div>
+          <hr class="border-gray-200">
+          <div class="flex flex-col">
+            <div class="flex justify-between">
+              <div>1x Aros de cebolla</div>
+              <div>4.00</div>
+            </div>
+            <div class="flex justify-between my-2">
+              <div class="rounded-full bg-blue-400 w-6 h-6 flex items-center justify-center"><i class="fas fa-minus text-white"></i></div>
+              <div class="rounded-full bg-blue-400 w-6 h-6 flex items-center justify-center"><i class="fas fa-plus text-white"></i></div>
+            </div>
+          </div>
+          <hr class="border-gray-200">
+        </div>
+        <button class="flex items-center my-5 px-20 rounded-full bg-blue-400 text-white h-9 uppercase font-semibold"><span class="mr-3">Confirmar</span><span class="font-extrabold text-xl">45.00 €</span></button>
+      </div>
+    </div>
+  </div>
+  
 </body>
 </html>
