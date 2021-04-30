@@ -1,0 +1,27 @@
+{
+  "name": "smartmenu-layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "dependencies": {
+    "autoprefixer": "^10.2.3",
+    "live-server": "^1.2.1",
+    "postcss": "^8.2.4",
+    "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garolard/ejercicio-tailwind.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/garolard/ejercicio-tailwind/issues"
+  },
+  "homepage": "https://github.com/garolard/ejercicio-tailwind#readme"
+}
