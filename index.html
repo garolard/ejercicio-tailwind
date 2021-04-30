@@ -18,11 +18,17 @@
 
 <body class=' bg-red-50'>
   <div class='max-w-screen-xl mx-auto'>
-    <header class='absolute top-0 left-0 w-full h-52 bg-center bg-cover border-gray-500 text-center bg-gray-500'
-      style="background-image: url('./header.png')">
-    </header>
-    <div class="flex space-x-6 mt-56 items-start lg:px-6">
-      <div id="categories" class="hidden lg:block flex-none w-80 bg-gray-50 rounded-xl pl-3 sticky top-10">
+
+    <div class="lg:mb-52">
+      <header class="lg:absolute top-0 left-0 w-full lg:h-52 bg-center bg-cover border-gray-500 text-center bg-gray-500"
+        style="background-image: url('./header.png')">
+        <img class="lg:hidden" src="header.png">
+      </header>
+    </div>
+
+    <div class="flex space-x-6 pt-2 items-start lg:px-6">
+      <div id="categories"
+        class="hidden lg:block flex-none w-80 bg-gray-50 rounded-xl pl-3 sticky top-10 border border-gray-200 shadow-lg">
 
         <ul class="divide-y divide-gray-200 p-2 ">
           <li class="py-3 "><a href="#/category/7">
@@ -530,7 +536,8 @@
         </ul>
 
       </div>
-      <div id="carrito" class="hidden lg:block flex-none w-80 sticky top-10">
+      <div id="carrito"
+        class="hidden lg:block flex-none w-80 sticky top-10  border border-gray-200 shadow-lg rounded-xl">
         <div class="flex flex-col items-center bg-gray-50 rounded-xl p-2">
           <h1 class="text-xl font-semibold mb-2">Tu pedido</h1>
           <i class="fas fa-motorcycle text-3xl"></i>
